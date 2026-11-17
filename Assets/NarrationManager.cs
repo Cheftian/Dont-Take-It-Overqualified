@@ -13,6 +13,7 @@ public class NarrationManager : MonoBehaviour
 
     [Header("Komponen UI Dialog")]
     public GameObject dialogueBox;          // Panel utama yang mencakup name box & text box
+    public Sprite hrdDialogueBoxSprite;
     public TextMeshProUGUI nameText;        // Teks nama pembicara ("HRD" atau nama kandidat)
     public TextMeshProUGUI dialogueText;    // Teks isi kalimat dialog
     public float typingSpeed = 0.03f;       // Kecepatan efek ketik huruf demi huruf
@@ -64,12 +65,15 @@ public class NarrationManager : MonoBehaviour
     private Action onSequenceComplete;
 
     private RectTransform dialogueBoxRect;
+    private Image dialogueBoxImage;
+    private Sprite candidateDialogueBoxSprite;
     private Vector2 dialogueBoxOriginalPosition;
     private Vector3 dialogueBoxOriginalScale;
     private Coroutine dialogueBoxAnimationCoroutine;
     private Coroutine choicesStaggerCoroutine;
     private readonly List<Coroutine> choiceBubbleAnimationCoroutines = new List<Coroutine>();
     private readonly Dictionary<RectTransform, Vector2> choiceBubbleOriginalPositions = new Dictionary<RectTransform, Vector2>();
+    private readonly Dictionary<RectTransform, Vector3> choiceBubbleOriginalScales = new Dictionary<RectTransform, Vector3>();
     private GridLayoutGroup choicesGridLayout;
     private bool choicesGridLayoutWasEnabled;
     private bool choicesGridLayoutTemporarilyDisabled;
@@ -199,6 +203,10 @@ public class NarrationManager : MonoBehaviour
         {
             if (dialogueBox == null) return;
 
+            dialogueBoxImage = dialogueBox.GetComponent<Image>();
+            if (dialogueBoxImage != null)
+                candidateDialogueBoxSprite = dialogueBoxImage.sprite;
+
             dialogueBoxRect = dialogueBox.GetComponent<RectTransform>();
             if (dialogueBoxRect == null) return;
 
@@ -274,18 +282,33 @@ public class NarrationManager : MonoBehaviour
             }
 
             StopDialogueBoxAnimation();
-            dialogueBoxAnimationCoroutine = StartCoroutine(ShakeDialogueBox());
+            dialogueBoxAnimationCoroutine = StartCoroutine(BounceDialogueBox());
         }
 
-    private IEnumerator ShakeDialogueBox()
+        private IEnumerator BounceDialogueBox()
         {
             float elapsed = 0f;
             while (elapsed < dialogueShakeDuration)
             {
                 elapsed += Time.unscaledDeltaTime;
                 float t = Mathf.Clamp01(elapsed / dialogueShakeDuration);
-                float strength = dialogueShakeStrength * (1f - t);
-                float offset = Mathf.Sin(elapsed * Mathf.PI * 2f * 24f) * strength;
+                float offset;
+                if (t < 0.4f)
+                {
+                    float moveLeft = Mathf.SmoothStep(0f, 1f, t / 0.4f);
+                    offset = -dialogueShakeStrength * moveLeft;
+                }
+                else if (t < 0.78f)
+                {
+                    float moveRight = Mathf.SmoothStep(0f, 1f, (t - 0.4f) / 0.38f);
+                    offset = Mathf.Lerp(-dialogueShakeStrength, dialogueShakeStrength * 0.2f, moveRight);
+                }
+                else
+                {
+                    float settle = Mathf.SmoothStep(0f, 1f, (t - 0.78f) / 0.22f);
+                    offset = Mathf.Lerp(dialogueShakeStrength * 0.2f, 0f, settle);
+                }
+
                 dialogueBoxRect.anchoredPosition = dialogueBoxOriginalPosition + Vector2.right * offset;
                 yield return null;
             }
@@ -363,12 +386,15 @@ public class NarrationManager : MonoBehaviour
             foreach (RectTransform bubble in bubbles)
             {
                 choiceBubbleOriginalPositions[bubble] = bubble.anchoredPosition;
+                choiceBubbleOriginalScales[bubble] = bubble.localScale;
                 bubble.anchoredPosition += Vector2.left * choiceSlideOffsetX;
+                bubble.localScale = Vector3.zero;
             }
 
             if (bubbles.Count == 0)
             {
                 choiceBubbleOriginalPositions.Clear();
+                choiceBubbleOriginalScales.Clear();
                 RestoreChoicesGridLayout();
                 return;
             }
@@ -401,18 +427,23 @@ public class NarrationManager : MonoBehaviour
                     Mathf.Min(choiceRandomDelayRange.x, choiceRandomDelayRange.y),
                     maximumDelay
                 );
-                choiceBubbleAnimationCoroutines.Add(StartCoroutine(
-                    SlideChoiceBubble(bubble, choiceBubbleOriginalPositions[bubble], delay)
-                ));
+                choiceBubbleAnimationCoroutines.Add(StartCoroutine(SlideChoiceBubble(
+                    bubble,
+                    choiceBubbleOriginalPositions[bubble],
+                    choiceBubbleOriginalScales[bubble],
+                    delay
+                )));
             }
 
             yield return new WaitForSecondsRealtime(maximumDelay + choiceSlideDuration);
             choicesStaggerCoroutine = null;
             choiceBubbleAnimationCoroutines.Clear();
+            choiceBubbleOriginalPositions.Clear();
+            choiceBubbleOriginalScales.Clear();
             RestoreChoicesGridLayout();
         }
 
-    private IEnumerator SlideChoiceBubble(RectTransform bubble, Vector2 targetPosition, float delay)
+    private IEnumerator SlideChoiceBubble(RectTransform bubble, Vector2 targetPosition, Vector3 targetScale, float delay)
         {
             if (delay > 0f)
                 yield return new WaitForSecondsRealtime(delay);
@@ -423,11 +454,14 @@ public class NarrationManager : MonoBehaviour
             {
                 elapsed += Time.unscaledDeltaTime;
                 float t = Mathf.Clamp01(elapsed / choiceSlideDuration);
-                bubble.anchoredPosition = Vector2.Lerp(startPosition, targetPosition, Mathf.SmoothStep(0f, 1f, t));
+                float easedT = Mathf.SmoothStep(0f, 1f, t);
+                bubble.anchoredPosition = Vector2.Lerp(startPosition, targetPosition, easedT);
+                bubble.localScale = Vector3.Lerp(Vector3.zero, targetScale, easedT);
                 yield return null;
             }
 
             bubble.anchoredPosition = targetPosition;
+            bubble.localScale = targetScale;
         }
 
     private void StopChoicesAnimation()
@@ -448,9 +482,14 @@ public class NarrationManager : MonoBehaviour
             foreach (KeyValuePair<RectTransform, Vector2> bubble in choiceBubbleOriginalPositions)
             {
                 if (bubble.Key != null)
+                {
                     bubble.Key.anchoredPosition = bubble.Value;
+                    if (choiceBubbleOriginalScales.TryGetValue(bubble.Key, out Vector3 originalScale))
+                        bubble.Key.localScale = originalScale;
+                }
             }
             choiceBubbleOriginalPositions.Clear();
+            choiceBubbleOriginalScales.Clear();
             RestoreChoicesGridLayout();
         }
 
@@ -751,9 +790,13 @@ public class NarrationManager : MonoBehaviour
         hasDisplayedLineInSequence = true;
 
         currentLine = lineQueue.Dequeue();
+        SetDialogueBoxSprite(currentLine.isHRD);
 
         if (currentLine.isHRD)
         {
+            if (panelAnimation != null)
+                panelAnimation.StopTalkingAnimation();
+
             if (nameText != null) nameText.text = "HRD";
         }
         else
@@ -776,7 +819,7 @@ public class NarrationManager : MonoBehaviour
     private IEnumerator TypeSentence(string sentence)
     {
         isTyping = true;
-        if (panelAnimation != null)
+        if (panelAnimation != null && !currentLine.isHRD)
             panelAnimation.StartTalkingAnimation();
 
         dialogueText.text = "";
@@ -790,6 +833,23 @@ public class NarrationManager : MonoBehaviour
         isTyping = false;
         if (panelAnimation != null)
             panelAnimation.StopTalkingAnimation();
+    }
+
+    private void SetDialogueBoxSprite(bool isHrdLine)
+    {
+        if (dialogueBoxImage == null)
+        {
+            Debug.LogError("[NarrationManager] Dialogue Box harus memiliki komponen Image untuk mengganti sprite pembicara.");
+            return;
+        }
+
+        if (isHrdLine && hrdDialogueBoxSprite == null)
+        {
+            Debug.LogError("[NarrationManager] Sprite Dialogue Box HRD belum diisi di Inspector.");
+            return;
+        }
+
+        dialogueBoxImage.sprite = isHrdLine ? hrdDialogueBoxSprite : candidateDialogueBoxSprite;
     }
 
     private void CompleteCurrentSentence()

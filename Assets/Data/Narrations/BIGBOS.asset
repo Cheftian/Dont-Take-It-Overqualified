@@ -62,7 +62,8 @@ MonoBehaviour:
       Itu sudah saya tes kok.
   - isHRD: 0
     expressionId: Senyum sinis
-    sentence: Inget, ya. Nama anaknya ada <b>Cakrawala</b> nya juga.
+    sentence: Inget, ya. Siapa gitu nama anaknya. Pokok ada <b>Cakrawala</b> nya
+      juga.
   - isHRD: 0
     expressionId: Senang
     sentence: Kerjaan hari ini saya serahin ke kamu. Nanti saya kabarin hasil kerjamu

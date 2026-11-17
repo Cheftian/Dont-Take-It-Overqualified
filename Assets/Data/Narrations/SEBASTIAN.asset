@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: SEBASTIAN
+  m_EditorClassIdentifier: 
+  targetCharacterId: Sebastian
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selamat pagi, saya Sebastian Serdian.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Benar, saya <b>mendaftar sebagai satpam.</b>
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Apa saja skill/pengalaman kamu?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selama di kampus, saya sering juara Taekwondo dari tingkat nasional
+      sampai internasional.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Pengalaman kerja saya nggak banyak. Cuman jadi satpam di bank DCA selama
+      4 tahun.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya bisa pakai Ms.Wood dan Gagaal Meet saja.
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Ada ekspektasi gaji?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Kurang lebih 4-5 juta.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Sudahi wawancara
+  - isHRD: 0
+    expressionId: 
+    sentence: <i>*ngangguk*</i>

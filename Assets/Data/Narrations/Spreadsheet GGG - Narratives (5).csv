@@ -1,0 +1,112 @@
+ID,Type,Character,Expression,DialogueED
+BIGBOS,Intro,Big Boss,Senang,"Pagi! Wah, semangat sekali kamu datang pagi-pagi."
+BIGBOS,Intro,Big Boss,Senyum sinis,"Pasti nggak sabar ngetes kandidat baru, ya?"
+BIGBOS,Intro,Big Boss,Senyum sinis,"Oh ya, saya tadi lihat ada 6 orang di depan. Itu ya kandidatnya?"
+BIGBOS,Intro,Big Boss,Senang,Lho? Masih muda kok udah lupa cara ngetesnya gimana. 
+BIGBOS,Intro,Big Boss,Senang,Bercanda! Jangan baper... kamu cek tuh PC kamu.
+BIGBOS,Intro,Big Boss,Senyum sinis,Lihat <b>aplikasi PDR</b> di layar PC kamu kan? Itu <b>buat lihat CV kandidat kamu.</b> Coba kamu klik.
+BIGBOS,Intro,Big Boss,Senyum sinis,"Ada kan CV nya? Nah, sekarang kamu cek <b>aplikasi Wood.</b> Itu <b>buat cek kategori staff</b> yang saya mau."
+BIGBOS,Intro,Big Boss,Senyum sinis,Pastikan isi CV nya harus sesuai sama kategori role nya.
+BIGBOS,Intro,Big Boss,Senyum sinis,"Terus kamu cek... apa tuh? Aplikasi hijau. Oh ya, <b>X-cell!</b> Kamu <b>centangin yang cocok</b> sama perusahaan."
+BIGBOS,Intro,Big Boss,Senyum sinis,"Saya lagi, anu, ngirit anggaran. Kamu <b>terima yang bisa dibayar murah</b> aja, ya?"
+BIGBOS,Intro,Big Boss,Senyum sinis,"Sudah semua? Nah, pokok nanti <b>jangan terima yang terlalu bagus.</b> Mahal. "
+BIGBOS,Intro,Big Boss,Senyum sinis,"Kamu juga <b>bisa nanyain kandidat di interview, buat mastiin gaji mereka.</b>"
+BIGBOS,Intro,Big Boss,Senyum sinis,"Oh ya, sama... kalau nanti ada <b>anaknya pak Cakrawala, terima aja.</b> Itu sudah saya tes kok. "
+BIGBOS,Intro,Big Boss,Senyum sinis,"Inget, ya. Siapa gitu nama anaknya. Pokok ada <b>Cakrawala</b> nya juga."
+BIGBOS,Intro,Big Boss,Senang,Kerjaan hari ini saya serahin ke kamu. Nanti saya kabarin hasil kerjamu lewat <b>HP di meja</b> kamu.
+SEBASTIAN,Intro,Sebastian,Normal,"Selamat pagi, saya Sebastian Serdian."
+SEBASTIAN,Intro,Sebastian,Normal,"Benar, saya <b>mendaftar sebagai satpam.</b>"
+SEBASTIAN,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+SEBASTIAN,Skill,Sebastian,Normal,"Selama di kampus, saya sering juara Taekwondo dari tingkat nasional sampai internasional."
+SEBASTIAN,Skill,Sebastian,Normal,Pengalaman kerja saya nggak banyak. Cuman jadi satpam di bank DCA selama 4 tahun.
+SEBASTIAN,Skill,Sebastian,Normal,Saya bisa pakai Ms.Wood dan Gagaal Meet saja.
+SEBASTIAN,Salary,HRD,-,Ada ekspektasi gaji?
+SEBASTIAN,Salary,Sebastian,Normal,Kurang lebih 4-5 juta.
+SEBASTIAN,Outro,HRD,-,Sudahi wawancara
+SEBASTIAN,Outro,Sebastian,-,<i>*ngangguk*</i>
+GANDARI,Intro,Gandari,Normal,"Selamat pagi. Benar, saya Gandari Widuri."
+GANDARI,Intro,Gandari,Normal,Saya melamar posisi asisten manager.
+GANDARI,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+GANDARI,Skill,Gandari,Normal,Saya pernah magang di kantor De Tok saat saya masih berkuliah. Dan diterima menjadi akuntansi tetap disana selama 3 tahun.
+GANDARI,Skill,Gandari,Normal,"Selama kuliah, saya pernah menjadi asisten dosen manajemen akuntansi kurang lebih 2 semester. Kebetulan beliau selalu sekelas dengan saya, jadi sekalian saja 2 periode."
+GANDARI,Skill,Gandari,Normal,"Saya mampu mengoperasikan banyak aplikasi, utamanya Ms.X-cell, Ms.Wood, Gagaal Meet, dan Breloo selama bekerja."
+GANDARI,Salary,HRD,-,Ada ekspektasi gaji?
+GANDARI,Salary,Gandari,Normal,"Dengan pengalaman dan skill saya, saya yakin bisa memberikan dampak yang besar untuk perusahaan."
+GANDARI,Salary,Gandari,Normal,"Karena itu, saya rasa gaji 7-8 juta ekspektasi saya."
+GANDARI,Outro,HRD,-,Sudahi wawancara
+GANDARI,Outro,Gandari,Normal,Terimakasih atas waktu anda.
+ZAHRA,Intro,Zahra,Normal,"Pagi. Iya, saya Zahra Ladiva, kak. Eh, maksudnya--ya udah lah terlanjur."
+ZAHRA,Intro,Zahra,Normal,"Bener, kak. Saya <b>ngelamar posisi desain grafis.</b>"
+ZAHRA,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+ZAHRA,Skill,Zahra,Normal,"Nggak banyak sih. Tapi biasanya saya pakai Aduhbe Illustrator, Feegma, sama Kreta. Aplikasi standar kampus."
+ZAHRA,Skill,Zahra,Normal,Kalau pengalaman... cuman magang desain grafis sama open commis buat jajan Komifomo.
+ZAHRA,Salary,HRD,-,Ada ekspektasi gaji?
+ZAHRA,Salary,Zahra,Normal,Berapa aja aman sih. Pokoknya keterima kerja. Saya males nganggur di rumah. Mana commis sepi.
+ZAHRA,Outro,HRD,-,Sudahi wawancara
+ZAHRA,Outro,Zahra,Normal,"Wokeh, kak! Makasih banyak. "
+ADRIAN,Intro,Adrian,Normal,Morning. Gue Adrian Cakrawala.
+ADRIAN,Intro,Adrian,Normal,"Yes, yang <b>ngelamar jadi asisten manager.</b>"
+ADRIAN,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+ADRIAN,Skill,Adrian,Normal,Gue ngikut papa aja sih kalo soal magang. Jadi sekretaris.
+ADRIAN,Skill,Adrian,Normal,Dulu pernah jadi kapten basket pas SMA. Jadi caster MOBBA juga pernah.
+ADRIAN,Salary,Salary,-,Ada ekspektasi gaji?
+ADRIAN,Salary,Salary,Normal,"7 Juta, <i>take it or leave it.</i>"
+ADRIAN,Outro,HRD,-,Sudahi wawancara
+ADRIAN,Outro,Adrian,Normal,"Udah? Gitu aja? Simple amat. Hmph, ya udah deh."
+ODY,Intro,Ody,Normal,S-selamat pagi. Saya Odysseus Liebert. 
+ODY,Intro,Ody,Normal,"Saya yang <b>melamar, u-uhh itu... desain grafis.</b> I-iya, itu."
+ODY,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+ODY,Skill,Ody,Normal,"S-saya dulu sering bantu-bantu kampus... sama teman, sama dosen. "
+ODY,Skill,Ody,Normal,Saya juga open commis. S-sudah lama juga sejak awal kuliah.
+ODY,Skill,Ody,Normal,"Setelah lulus, s-saya kerja di studio FlowerBloom. Sebagai... staff... animator."
+ODY,Salary,HRD,-,Ada ekspektasi gaji?
+ODY,Salary,Ody,Normal,"Mungkin... sekitar 6,5 juta?"
+ODY,Salary,Ody,Normal,"E-eh, kalau nggak keberatan maksudnya. Normalnya... segitu."
+ODY,Outro,HRD,-,Sudahi wawancara
+ODY,Outro,Ody,Normal,... Sudah?
+ODY,Outro,Ody,Normal,H-hasilnya nggak diumumkan sekarang?
+ODY,Outro,Ody,Normal,T-tapi saya... saya bakal diterima kan? CV saya... s-sudah bagus kok!
+ODY_Choices_1,Intro,HRD,-,Ketolak itu normal. Nggak usah baper!
+ODY_Choices_1,Intro,Ody,Frustasi,<i>Normal...? B-baper..?</i>
+ODY_Choices_1,Intro,Ody,Frustasi,"Saya sudah berkali-kali <i>apply</i>, ketolak sana-sini. "
+ODY_Choices_1,Intro,Ody,Frustasi,Kalau yang ini saya nggak keterima juga... saya harus bilang apa ke orang tua??!!
+ODY_Choices_1,Intro,Ody,Frustasi,Saya sudah di cap gagal. Cuman bisa ngabisin uang. Pengangguran. 
+ODY_Choices_1,Intro,Ody,Frustasi,<i>Nggak punya masa depan. Nggak ada harapan. <b>NGGAK GUNA!!!</b></i>
+ODY_Choices_1,Intro,Ody,Frustasi,<b>ANDA NGGAK PERNAH JADI SAYA!!</b>
+ODY_Choices_2,Intro,HRD,-,Saya percaya kamu bisa!
+ODY_Choices_2,Intro,Ody,Normal,....
+ODY_Choices_2,Intro,Ody,Normal,Bisa...? E-emangnya... saya <i>bisa?</i> Kok anda bisa percaya sama saya?
+ODY_Choices_2,Intro,Ody,Frustasi,Saya sudah berkali-kali <i>apply</i>. Ketolak sana-sini lho. 
+ODY_Choices_2,Intro,Ody,Frustasi,Kalau yang ini saya nggak keterima juga... saya harus bilang apa ke orang tua?
+ODY_Choices_2,Intro,Ody,Frustasi,Saya sudah di cap gagal. Cuman bisa ngabisin uang. Pengangguran. 
+ODY_Choices_2,Intro,Ody,Frustasi,<i>Nggak punya masa depan. Nggak ada harapan...</i>
+ODY_Choices_2,Intro,Ody,Frustasi,T-tapi... kalau anda bilang saya <i>bisa</i>... b-berarti saya bisa kan keterima?
+ODY_Choices_2,Intro,Ody,Frustasi,Saya pasti keterima kan? <b>Pasti bisa keterima KAN?? IYA KAN??!!</b>
+AYU,Intro,Ayu,Normal,Selamat pagi. Saya Ayu Angela.
+AYU,Intro,Ayu,Normal,"Benar, kak. Saya <b>melamar posisi desain grafis.</b> Semoga interview kita bisa berjalan lancar, ya?"
+AYU,Skill,HRD,-,Apa saja skill/pengalaman kamu?
+AYU,Skill,Ayu,Senang,Oh! Saya bisa pakai Aduhbe Illustrator sama Feegma.
+AYU,Skill,Ayu,Senang,"Kebetulan saya magang di 19-JT Studio, sukanya pakai dua aplikasi itu."
+AYU,Skill,Ayu,Senang,K-kayaknya saya masih banyak kurangnya. Tapi... saya bisa coba belajar aplikasi lain jika perusahaan perlu!
+AYU,Salary,HRD,-,Ada ekspektasi gaji?
+AYU,Salary,Ayu,Senang,"Gaji saya di UMR-kan saja, kalau bisa."
+AYU,Salary,Ayu,Senang,Sehubung kemampuan saya juga pas-pasan. Saya terima apa adanya.
+AYU,Outro,HRD,-,Sudahi wawancara
+AYU,Outro,Ayu,Senang,"Terimakasih banyak, kak! Semoga kita bisa bertemu lagi lain waktu. Saya permisi, ya?"
+Bad end_chat,Intro,Big Boss,-,Selamat pagi
+Bad end_chat,Intro,Big Boss,,Saya lihat kerja kamu kemarin...
+Bad end_chat,Intro,Big Boss,-,Anak pak Cakrawala nggak kamu masukan ya?
+Bad end_chat,Intro,Big Boss,-,Saya sudah bilang <b>jangan sampai lupa!</b>
+Bad end_chat,Intro,Big Boss,-,Hari ini kamu saya pecat!
+Bad end_chat,Intro,Big Boss,-,Nggak becus
+Good end_chat,Intro,Big Boss,-,Selamat pagi!
+Good end_chat,Intro,Big Boss,-,Saya lihat kerja kamu kemarin...
+Good end_chat,Intro,Big Boss,-,Kerja kamu bagus ya? Saya senang lihatnya
+Good end_chat,Intro,Big Boss,-,Nanti kamu naik gaji
+Good end_chat,Intro,Big Boss,-,Tapi nanti kalau omset sudah balik ya
+Good end_chat,Intro,Big Boss,-,hahaha
+Secret end_chat,Intro,Polisi,-,"Selamat pagi, apa benar ini HRD dari perusahaan TIWAS?"
+Secret end_chat,Intro,Polisi,-,Kami dari pihak kepolisian menerima laporan masalah penyalahgunaan wewenang dari saksi yang mengaku sebagai kandidat karyawan
+Secret end_chat,Intro,Polisi,-,Pengakuan tersebut diantara lain adalah <b>mengusir kandidat karyawan tanpa alasan yang jelas</b>
+Secret end_chat,Intro,Polisi,-,"Saat ini, tim kami sudah ada di depan kantor anda"
+Secret end_chat,Intro,Polisi,-,Mohon untuk menyerahkan diri dan tidak melawan agar proses hukum bisa berlangsung dengan baik

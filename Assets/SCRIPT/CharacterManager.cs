@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // Hapus baris ini jika memakai SpriteRenderer
 
 [System.Serializable]
 public class ExpressionData
@@ -23,6 +24,9 @@ public class CharacterProfile
     public SpriteRenderer characterSpriteRenderer;
     public Sprite defaultSprite;    // Sprite default saat karakter pertama kali muncul
     public List<ExpressionData> expressions = new List<ExpressionData>();
+
+    [Header("Dokumen Kandidat")]
+    public Sprite cvSprite;         // Gambar CV milik kandidat ini
 }
 
 public class CharacterManager : MonoBehaviour
@@ -30,6 +34,10 @@ public class CharacterManager : MonoBehaviour
     [Header("Komponen Visual 2D Utama")]
     [Tooltip("Fallback untuk profil yang belum memiliki SpriteRenderer sendiri")]
     public SpriteRenderer characterSpriteRenderer;
+
+    [Header("Komponen Visual CV")]
+    public Image cvDisplayImage;      // Drag 'CV_Content' ke sini
+    public ScrollRect cvScrollRect;   // Drag 'CV_Viewport' ke sini
 
     [Header("Database Karakter")]
     public List<CharacterProfile> characterDatabase = new List<CharacterProfile>();
@@ -43,7 +51,7 @@ public class CharacterManager : MonoBehaviour
     public bool IsCurrentCandidateOrangDalam => currentCandidate != null && currentCandidate.isOrangDalam;
 
     /// <summary>
-    /// Memuat data dan visual kandidat berdasarkan characterId.
+    /// Memuat data, visual kandidat, dan gambar CV berdasarkan characterId.
     /// </summary>
     public CharacterProfile SetupCandidate(string characterId)
     {
@@ -71,6 +79,9 @@ public class CharacterManager : MonoBehaviour
                 profileRenderer.sprite = profile.defaultSprite;
                 profileRenderer.enabled = true;
             }
+
+            // Otomatis perbarui gambar CV sesuai kandidat yang dipanggil
+            UpdateCandidateCV(profile);
         }
         else
         {
@@ -79,6 +90,29 @@ public class CharacterManager : MonoBehaviour
 
         return currentCandidate;
     }
+
+    private void UpdateCandidateCV(CharacterProfile profile)
+    {
+        if (cvDisplayImage == null) return;
+
+        if (profile.cvSprite != null)
+        {
+            cvDisplayImage.sprite = profile.cvSprite;
+            cvDisplayImage.transform.parent.gameObject.SetActive(true); // Aktifkan CV_Viewport
+
+            // Reset posisi scroll ke paling atas setiap kandidat baru masuk
+            if (cvScrollRect != null)
+            {
+                cvScrollRect.verticalNormalizedPosition = 1f;
+            }
+        }
+        else
+        {
+            // Sembunyikan CV_Viewport jika kandidat tidak punya CV
+            cvDisplayImage.transform.parent.gameObject.SetActive(false);
+        }
+    }
+
 
     /// <summary>
     /// Mengubah ekspresi karakter berdasarkan characterId dari NarrationData dan expressionId.

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: BIGBOS
+  m_EditorClassIdentifier: 
+  targetCharacterId: Big Boss
+  introLines:
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Pagi! Wah, semangat sekali kamu datang pagi-pagi.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Pasti nggak sabar ngetes kandidat baru, ya?
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Oh ya, saya tadi lihat ada 6 orang di depan. Itu ya kandidatnya?
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Lho? Masih muda kok udah lupa cara ngetesnya gimana.
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Bercanda! Jangan baper... kamu cek tuh PC kamu.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Lihat <b>aplikasi PDR</b> di layar PC kamu kan? Itu <b>buat lihat CV
+      kandidat kamu.</b> Coba kamu klik.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Ada kan CV nya? Nah, sekarang kamu cek <b>aplikasi Wood.</b> Itu <b>buat
+      cek kategori staff</b> yang saya mau.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Pastikan isi CV nya harus sesuai sama kategori role nya.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Terus kamu cek... apa tuh? Aplikasi hijau. Oh ya, <b>X-cell!</b> Kamu
+      <b>centangin yang cocok</b> sama perusahaan.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Saya lagi, anu, ngirit anggaran. Kamu <b>terima yang bisa dibayar murah</b>
+      aja, ya?
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Sudah semua? Nah, pokok nanti <b>jangan terima yang terlalu bagus.</b>
+      Mahal.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Kamu juga <b>bisa nanyain kandidat di interview, buat mastiin gaji
+      mereka.</b>
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Oh ya, sama... kalau nanti ada <b>anaknya pak Cakrawala, terima aja.</b>
+      Itu sudah saya tes kok.
+  - isHRD: 0
+    expressionId: Senyum sinis
+    sentence: Inget, ya. Nama anaknya ada <b>Cakrawala</b> nya juga.
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Kerjaan hari ini saya serahin ke kamu. Nanti saya kabarin hasil kerjamu
+      lewat <b>HP di meja</b> kamu.
+  skillLines: []
+  salaryLines: []
+  outroLines: []

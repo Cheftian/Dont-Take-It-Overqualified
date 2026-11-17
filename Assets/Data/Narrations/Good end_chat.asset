@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: Good end_chat
+  m_EditorClassIdentifier: 
+  targetCharacterId: Big Boss
+  introLines:
+  - isHRD: 0
+    expressionId: 
+    sentence: Selamat pagi!
+  - isHRD: 0
+    expressionId: 
+    sentence: Saya lihat kerja kamu kemarin...
+  - isHRD: 0
+    expressionId: 
+    sentence: Kerja kamu bagus ya? Saya senang lihatnya
+  - isHRD: 0
+    expressionId: 
+    sentence: Nanti kamu naik gaji
+  - isHRD: 0
+    expressionId: 
+    sentence: Tapi nanti kalau omset sudah balik ya
+  - isHRD: 0
+    expressionId: 
+    sentence: hahaha
+  skillLines: []
+  salaryLines: []
+  outroLines: []

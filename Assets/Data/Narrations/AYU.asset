@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: AYU
+  m_EditorClassIdentifier: 
+  targetCharacterId: Ayu
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selamat pagi. Saya Ayu Angela.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Benar, kak. Saya <b>melamar posisi desain grafis.</b> Semoga interview
+      kita bisa berjalan lancar, ya?
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Apa saja skill/pengalaman kamu?
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Oh! Saya bisa pakai Aduhbe Illustrator sama Feegma.
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Kebetulan saya magang di 19-JT Studio, sukanya pakai dua aplikasi itu.
+  - isHRD: 0
+    expressionId: Senang
+    sentence: K-kayaknya saya masih banyak kurangnya. Tapi... saya bisa coba belajar
+      aplikasi lain jika perusahaan perlu!
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Ada ekspektasi gaji?
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Gaji saya di UMR-kan saja, kalau bisa.
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Sehubung kemampuan saya juga pas-pasan. Saya terima apa adanya.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Sudahi wawancara
+  - isHRD: 0
+    expressionId: Senang
+    sentence: Terimakasih banyak, kak! Semoga kita bisa bertemu lagi lain waktu.
+      Saya permisi, ya?

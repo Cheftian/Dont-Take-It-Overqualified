@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: ODY_Choices_2
+  m_EditorClassIdentifier: 
+  targetCharacterId: Ody
+  introLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Saya percaya kamu bisa!
+  - isHRD: 0
+    expressionId: Normal
+    sentence: ....
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Bisa...? E-emangnya... saya <i>bisa?</i> Kok anda bisa percaya sama
+      saya?
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: Saya sudah berkali-kali <i>apply</i>. Ketolak sana-sini lho.
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: Kalau yang ini saya nggak keterima juga... saya harus bilang apa ke
+      orang tua?
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: Saya sudah di cap gagal. Cuman bisa ngabisin uang. Pengangguran.
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: <i>Nggak punya masa depan. Nggak ada harapan...</i>
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: T-tapi... kalau anda bilang saya <i>bisa</i>... b-berarti saya bisa
+      kan keterima?
+  - isHRD: 0
+    expressionId: Frustasi
+    sentence: Saya pasti keterima kan? <b>Pasti bisa keterima KAN?? IYA KAN??!!</b>
+  skillLines: []
+  salaryLines: []
+  outroLines: []

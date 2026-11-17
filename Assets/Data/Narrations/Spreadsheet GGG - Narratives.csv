@@ -1,0 +1,115 @@
+ID,Type,Character,Expression,DialogueED
+BIGBOS,Intro,Big Boss,Normal,Kerja yang bener
+BIGBOS,Intro,HRD,-,Oke bos
+BIGBOS,Intro,Big Boss,Normal,Yang bener lohya
+BIGBOS,Intro,HRD,-,Siap Bos
+BIGBOS,Intro,Big Boss,Normal,Bagus kalau begitu
+BIGBOS,Skill,Big Boss,Normal,Bagaimana perkembangan tes teknis kandidat baru?
+BIGBOS,Skill,HRD,-,"Sebagian besar sudah menyelesaikan ujian praktek, Pak."
+BIGBOS,Skill,Big Boss,Normal,"Pastikan standarnya tinggi, jangan asal lolos."
+BIGBOS,Skill,HRD,-,"Baik Pak, kami seleksi dengan ketat."
+BIGBOS,Salary,Big Boss,Normal,Sudah ada rekap penawaran gaji bulan ini?
+BIGBOS,Salary,HRD,-,"Sudah kami susun sesuai anggaran divisi, Pak."
+BIGBOS,Salary,Big Boss,Normal,Evaluasi lagi benefit tambahan untuk posisi kunci.
+BIGBOS,Salary,HRD,-,"Segera kami sesuaikan rinciannya, Pak."
+BIGBOS,Outro,Big Boss,Normal,Semua berkas evaluasi akhir sudah siap?
+BIGBOS,Outro,HRD,-,"Berkas sudah lengkap dan siap ditandatangani, Pak."
+BIGBOS,Outro,Big Boss,Normal,"Terima kasih, tolong arsipkan dengan rapi."
+BIGBOS,Outro,HRD,-,"Siap Pak, langsung kami proses pengarsipan."
+ADRIAN,Intro,Adrian,Normal,"Halo, saya Adrian untuk wawancara hari ini."
+ADRIAN,Intro,HRD,-,"Halo Adrian, silakan duduk dan perkenalkan diri Anda."
+ADRIAN,Intro,Adrian,Normal,"Terima kasih, saya sangat senang mendapatkan kesempatan ini."
+ADRIAN,Intro,HRD,-,"Sama-sama, mari kita mulai diskusinya."
+ADRIAN,Skill,HRD,-,Bisa ceritakan pengalaman keahlian utama Anda?
+ADRIAN,Skill,Adrian,Normal,Saya berpengalaman dalam manajemen proyek dan analisis data selama 4 tahun.
+ADRIAN,Skill,HRD,-,Tools apa saja yang biasa Anda gunakan dalam pekerjaan sehari-hari?
+ADRIAN,Skill,Adrian,Normal,"Saya terbiasa memakai SQL, Python, dan software visualisasi data."
+ADRIAN,Salary,HRD,-,Berapa ekspektasi kompensasi yang Anda harapkan?
+ADRIAN,Salary,Adrian,Normal,Saya berharap di kisaran pasar dengan mempertimbangkan tanggung jawab peran ini.
+ADRIAN,Salary,HRD,-,Paket kami mencakup asuransi kesehatan lengkap dan tunjangan performa.
+ADRIAN,Salary,Adrian,Normal,Penawaran paket tersebut terdengar sangat menarik bagi saya.
+ADRIAN,Outro,HRD,-,"Terima kasih atas waktunya hari ini, Adrian."
+ADRIAN,Outro,Adrian,Normal,"Terima kasih kembali, saya menunggu kabar baik berikutnya."
+ADRIAN,Outro,HRD,-,Kami akan mengabari hasil akhir paling lambat akhir pekan ini.
+ADRIAN,Outro,Adrian,Normal,"Siap, selamat siang dan semoga harinya menyenangkan."
+ODY,Intro,Ody,Normal,"Selamat pagi, saya Ody yang mendaftar posisi desainer."
+ODY,Intro,HRD,-,"Selamat pagi Ody, senang berkenalan dengan Anda."
+ODY,Intro,Ody,Normal,Senang juga bisa bertemu langsung dengan tim rekrutmen.
+ODY,Intro,HRD,-,Mari kita review portofolio desain yang sudah Anda kirimkan.
+ODY,Skill,HRD,-,Bagaimana pendekatan Anda dalam merancang sistem desain produk?
+ODY,Skill,Ody,Normal,Saya selalu memprioritaskan riset pengguna dan konsistensi komponen visual.
+ODY,Skill,HRD,-,Apakah Anda terbiasa berkolaborasi dengan tim engineering?
+ODY,Skill,Ody,Normal,"Ya, saya rutin melakukan handoff desain dan penyesuaian teknis bersama engineer."
+ODY,Salary,HRD,-,"Mengenai struktur gaji dan fasilitas kerja, apakah ada preferensi khusus?"
+ODY,Salary,Ody,Normal,Saya fleksibel dan terbuka untuk berdiskusi sesuai standar perusahaan.
+ODY,Salary,HRD,-,Kami menyediakan skema kerja fleksibel dan tunjangan perangkat kerja.
+ODY,Salary,Ody,Normal,Fasilitas tersebut sangat mendukung produktivitas kerja saya.
+ODY,Outro,Ody,Normal,Terima kasih banyak atas sesi diskusi yang sangat produktif.
+ODY,Outro,HRD,-,"Terima kasih juga Ody, kami terkesan dengan paparan portofolio Anda."
+ODY,Outro,Ody,Normal,Semoga saya dapat segera bergabung dengan tim kreatif di sini.
+ODY,Outro,HRD,-,Pengumuman tahap berikutnya akan kami infokan via email resmi.
+SEBASTIAN,Intro,Sebastian,Normal,"Halo, selamat pagi tim HRD."
+SEBASTIAN,Intro,HRD,-,"Selamat pagi Sebastian, ada yang bisa dibantu?"
+SEBASTIAN,Intro,Sebastian,Normal,Saya ingin menanyakan jadwal orientasi minggu ini.
+SEBASTIAN,Intro,HRD,-,Orientasi akan dimulai besok jam sembilan pagi.
+SEBASTIAN,Intro,Sebastian,Normal,"Baik, terima kasih banyak informasinya."
+SEBASTIAN,Skill,HRD,-,Apa fokus keahlian teknis yang paling Anda kuasai?
+SEBASTIAN,Skill,Sebastian,Normal,Fokus utama saya pada arsitektur cloud dan optimasi backend server.
+SEBASTIAN,Skill,HRD,-,Bagaimana Anda menangani lonjakan lalu lintas sistem yang tiba-tiba?
+SEBASTIAN,Skill,Sebastian,Normal,Kami menerapkan auto-scaling serta caching terdistribusi untuk menjaga stabilitas.
+SEBASTIAN,Salary,Sebastian,Normal,Apakah skema bonus performa tahunan termasuk dalam kontrak ini?
+SEBASTIAN,Salary,HRD,-,"Betul, ada bonus tahunan berdasarkan pencapaian KPI individu dan tim."
+SEBASTIAN,Salary,Sebastian,Normal,"Bagus sekali, sistem kompensasinya sangat transparan."
+SEBASTIAN,Salary,HRD,-,Kami selalu memastikan kesejahteraan karyawan menjadi prioritas utama.
+SEBASTIAN,Outro,Sebastian,Normal,Sesi diskusi hari ini memberikan gambaran peran yang sangat jelas.
+SEBASTIAN,Outro,HRD,-,"Senang mendengarnya Sebastian, proses onboarding Anda hampir rampung."
+SEBASTIAN,Outro,Sebastian,Normal,Saya siap berkontribusi penuh mulai hari pertama kerja nanti.
+SEBASTIAN,Outro,HRD,-,"Selamat bergabung di perusahaan, sampai bertemu besok pagi."
+GANDARI,Intro,Gandari,Normal,"Selamat siang, saya Gandari hadir untuk wawancara tahap akhir."
+GANDARI,Intro,HRD,-,"Selamat siang Gandari, terima kasih sudah hadir tepat waktu."
+GANDARI,Intro,Gandari,Normal,"Sama-sama, saya sangat antusias mengikuti tahap ini."
+GANDARI,Intro,HRD,-,Mari langsung saja masuk ke pembahasan peran kepemimpinan tim.
+GANDARI,Skill,HRD,-,Ceritakan gaya kepemimpinan Anda dalam mengelola tim lintas divisi.
+GANDARI,Skill,Gandari,Normal,Saya menerapkan komunikasi terbuka dan pendelegasian berbasis kekuatan tiap anggota.
+GANDARI,Skill,HRD,-,Bagaimana cara Anda menyelesaikan konflik internal antar divisi?
+GANDARI,Skill,Gandari,Normal,Kami mediasi langsung dengan mencari akar masalah dan solusi win-win.
+GANDARI,Salary,HRD,-,Kami telah menyiapkan penawaran kompensasi tingkat manajerial untuk Anda.
+GANDARI,Salary,Gandari,Normal,Boleh saya telaah rincian komponen gaji pokok dan tunjangan jabatannya?
+GANDARI,Salary,HRD,-,"Tentu, ini rincian paket komprehensif termasuk tunjangan transportasi dan asuransi keluarga."
+GANDARI,Salary,Gandari,Normal,Rincian paket ini sesuai dengan ekspektasi tanggung jawab yang akan saya emban.
+GANDARI,Outro,HRD,-,"Terima kasih atas sesi wawancara yang sangat mendalam hari ini, Gandari."
+GANDARI,Outro,Gandari,Normal,Terima kasih atas kesempatan dan sambutan hangat dari tim rekrutmen.
+GANDARI,Outro,HRD,-,Surat penawaran resmi akan kami kirimkan ke email Anda hari ini.
+GANDARI,Outro,Gandari,Normal,"Baik, saya tunggu surat resminya dan siap segera bekerja sama."
+AYU,Intro,Ayu,Normal,"Halo tim HRD, perkenalkan saya Ayu pelamar posisi analis data."
+AYU,Intro,HRD,-,"Halo Ayu, selamat datang di sesi wawancara kami."
+AYU,Intro,Ayu,Normal,"Terima kasih, saya siap mempresentasikan pengalaman studi kasus saya."
+AYU,Intro,HRD,-,"Silakan Ayu, kami sangat tertarik mendengar paparan Anda."
+AYU,Skill,Ayu,Normal,"Dalam proyek sebelumnya, saya memodelkan retensi pengguna menggunakan machine learning."
+AYU,Skill,HRD,-,"Menarik sekali, bagaimana dampak hasil model tersebut terhadap strategi produk?"
+AYU,Skill,Ayu,Normal,Hasil model berhasil menurunkan tingkat churn pelanggan sebesar 15 persen.
+AYU,Skill,HRD,-,Pencapaian yang sangat konkret dan relevan dengan tantangan tim kami saat ini.
+AYU,Salary,HRD,-,Apakah Anda sudah melihat rincian rentang gaji untuk posisi analis ini?
+AYU,Salary,Ayu,Normal,"Sudah saya telaah, dan rentang tersebut selaras dengan keahlian yang saya bawa."
+AYU,Salary,HRD,-,Kami juga menyertakan anggaran pelatihan dan sertifikasi profesional tahunan.
+AYU,Salary,Ayu,Normal,Peluang pengembangan skill ini sangat berharga bagi peningkatan kompetensi saya.
+AYU,Outro,HRD,-,"Terima kasih banyak atas waktu dan presentasi yang luar biasa hari ini, Ayu."
+AYU,Outro,Ayu,Normal,"Terima kasih atas waktu dan diskusi yang sangat membangun, Bu."
+AYU,Outro,HRD,-,Tim user akan memberikan umpan balik akhir dalam waktu 2 hari kerja.
+AYU,Outro,Ayu,Normal,"Siap, saya tunggu kabar selanjutnya. Selamat beraktivitas kembali."
+ZAHRA,Intro,Zahra,Normal,"Selamat pagi Bapak dan Ibu HRD, saya Zahra."
+ZAHRA,Intro,HRD,-,"Selamat pagi Zahra, senang sekali bisa menyapa Anda pagi ini."
+ZAHRA,Intro,Zahra,Normal,"Terima kasih atas undangannya, saya sangat bersemangat untuk berdiskusi."
+ZAHRA,Intro,HRD,-,Mari kita mulai dengan membahas motivasi Anda memilih perusahaan kami.
+ZAHRA,Skill,HRD,-,Apa strategi Anda dalam mengelola kampanye pemasaran digital berskala besar?
+ZAHRA,Skill,Zahra,Normal,Saya mengombinasikan optimasi konten kreatif berbasis audiens dengan pelacakan konversi real-time.
+ZAHRA,Skill,HRD,-,Bagaimana Anda mengukur efisiensi anggaran belanja iklan tiap kanal?
+ZAHRA,Skill,Zahra,Normal,Kami melacak metrik ROAS dan CAC secara berkala untuk merealokasi budget secara efisien.
+ZAHRA,Salary,Zahra,Normal,Boleh saya tahu kebijakan kenaikan remunerasi berkala di perusahaan ini?
+ZAHRA,Salary,HRD,-,Peninjauan kompensasi dilakukan tahunan berdasarkan evaluasi performa kerja.
+ZAHRA,Salary,Zahra,Normal,Itu memberikan motivasi kerja yang sangat jelas bagi kemajuan karier.
+ZAHRA,Salary,HRD,-,Kami selalu mengapresiasi kontribusi dan inisiatif nyata setiap anggota tim.
+ZAHRA,Outro,HRD,-,"Wawancara hari ini berjalan sangat lancar, terima kasih Zahra."
+ZAHRA,Outro,Zahra,Normal,Terima kasih banyak atas arahan dan wawasannya mengenai divisi marketing.
+ZAHRA,Outro,HRD,-,Kami akan segera menyampaikan keputusan final melalui portal rekrutmen.
+ZAHRA,Outro,Zahra,Normal,"Baik, terima kasih banyak dan semoga sukses selalu untuk seluruh tim."

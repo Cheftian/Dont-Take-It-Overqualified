@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: ADRIAN
+  m_EditorClassIdentifier: 
+  targetCharacterId: Adrian
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Halo, saya Adrian untuk wawancara hari ini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Halo Adrian, silakan duduk dan perkenalkan diri Anda.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih, saya sangat senang mendapatkan kesempatan ini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Sama-sama, mari kita mulai diskusinya.
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Bisa ceritakan pengalaman keahlian utama Anda?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya berpengalaman dalam manajemen proyek dan analisis data selama
+      4 tahun.
+  - isHRD: 1
+    expressionId: 
+    sentence: Tools apa saja yang biasa Anda gunakan dalam pekerjaan sehari-hari?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya terbiasa memakai SQL, Python, dan software visualisasi data.
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Berapa ekspektasi kompensasi yang Anda harapkan?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya berharap di kisaran pasar dengan mempertimbangkan tanggung jawab
+      peran ini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Paket kami mencakup asuransi kesehatan lengkap dan tunjangan performa.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Penawaran paket tersebut terdengar sangat menarik bagi saya.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Terima kasih atas waktunya hari ini, Adrian.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih kembali, saya menunggu kabar baik berikutnya.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami akan mengabari hasil akhir paling lambat akhir pekan ini.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Siap, selamat siang dan semoga harinya menyenangkan.

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: BIGBOS
+  m_EditorClassIdentifier: 
+  targetCharacterId: Big Boss
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Kerja yang bener
+  - isHRD: 1
+    expressionId: 
+    sentence: Oke bos
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Yang bener lohya
+  - isHRD: 1
+    expressionId: 
+    sentence: Siap Bos
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Bagus kalau begitu
+  skillLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Bagaimana perkembangan tes teknis kandidat baru?
+  - isHRD: 1
+    expressionId: 
+    sentence: Sebagian besar sudah menyelesaikan ujian praktek, Pak.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Pastikan standarnya tinggi, jangan asal lolos.
+  - isHRD: 1
+    expressionId: 
+    sentence: Baik Pak, kami seleksi dengan ketat.
+  salaryLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Sudah ada rekap penawaran gaji bulan ini?
+  - isHRD: 1
+    expressionId: 
+    sentence: Sudah kami susun sesuai anggaran divisi, Pak.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Evaluasi lagi benefit tambahan untuk posisi kunci.
+  - isHRD: 1
+    expressionId: 
+    sentence: Segera kami sesuaikan rinciannya, Pak.
+  outroLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Semua berkas evaluasi akhir sudah siap?
+  - isHRD: 1
+    expressionId: 
+    sentence: Berkas sudah lengkap dan siap ditandatangani, Pak.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih, tolong arsipkan dengan rapi.
+  - isHRD: 1
+    expressionId: 
+    sentence: Siap Pak, langsung kami proses pengarsipan.

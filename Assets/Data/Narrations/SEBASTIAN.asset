@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: SEBASTIAN
+  m_EditorClassIdentifier: 
+  targetCharacterId: Sebastian
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Halo, selamat pagi tim HRD.
+  - isHRD: 1
+    expressionId: 
+    sentence: Selamat pagi Sebastian, ada yang bisa dibantu?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya ingin menanyakan jadwal orientasi minggu ini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Orientasi akan dimulai besok jam sembilan pagi.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Baik, terima kasih banyak informasinya.
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Apa fokus keahlian teknis yang paling Anda kuasai?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Fokus utama saya pada arsitektur cloud dan optimasi backend server.
+  - isHRD: 1
+    expressionId: 
+    sentence: Bagaimana Anda menangani lonjakan lalu lintas sistem yang tiba-tiba?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Kami menerapkan auto-scaling serta caching terdistribusi untuk menjaga
+      stabilitas.
+  salaryLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Apakah skema bonus performa tahunan termasuk dalam kontrak ini?
+  - isHRD: 1
+    expressionId: 
+    sentence: Betul, ada bonus tahunan berdasarkan pencapaian KPI individu dan tim.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Bagus sekali, sistem kompensasinya sangat transparan.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami selalu memastikan kesejahteraan karyawan menjadi prioritas utama.
+  outroLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Sesi diskusi hari ini memberikan gambaran peran yang sangat jelas.
+  - isHRD: 1
+    expressionId: 
+    sentence: Senang mendengarnya Sebastian, proses onboarding Anda hampir rampung.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya siap berkontribusi penuh mulai hari pertama kerja nanti.
+  - isHRD: 1
+    expressionId: 
+    sentence: Selamat bergabung di perusahaan, sampai bertemu besok pagi.

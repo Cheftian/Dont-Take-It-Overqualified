@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: ODY
+  m_EditorClassIdentifier: 
+  targetCharacterId: Ody
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selamat pagi, saya Ody yang mendaftar posisi desainer.
+  - isHRD: 1
+    expressionId: 
+    sentence: Selamat pagi Ody, senang berkenalan dengan Anda.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Senang juga bisa bertemu langsung dengan tim rekrutmen.
+  - isHRD: 1
+    expressionId: 
+    sentence: Mari kita review portofolio desain yang sudah Anda kirimkan.
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Bagaimana pendekatan Anda dalam merancang sistem desain produk?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya selalu memprioritaskan riset pengguna dan konsistensi komponen
+      visual.
+  - isHRD: 1
+    expressionId: 
+    sentence: Apakah Anda terbiasa berkolaborasi dengan tim engineering?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Ya, saya rutin melakukan handoff desain dan penyesuaian teknis bersama
+      engineer.
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Mengenai struktur gaji dan fasilitas kerja, apakah ada preferensi khusus?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya fleksibel dan terbuka untuk berdiskusi sesuai standar perusahaan.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami menyediakan skema kerja fleksibel dan tunjangan perangkat kerja.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Fasilitas tersebut sangat mendukung produktivitas kerja saya.
+  outroLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih banyak atas sesi diskusi yang sangat produktif.
+  - isHRD: 1
+    expressionId: 
+    sentence: Terima kasih juga Ody, kami terkesan dengan paparan portofolio Anda.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Semoga saya dapat segera bergabung dengan tim kreatif di sini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Pengumuman tahap berikutnya akan kami infokan via email resmi.

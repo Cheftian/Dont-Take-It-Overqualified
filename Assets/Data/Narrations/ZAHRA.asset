@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: ZAHRA
+  m_EditorClassIdentifier: 
+  targetCharacterId: Zahra
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selamat pagi Bapak dan Ibu HRD, saya Zahra.
+  - isHRD: 1
+    expressionId: 
+    sentence: Selamat pagi Zahra, senang sekali bisa menyapa Anda pagi ini.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih atas undangannya, saya sangat bersemangat untuk berdiskusi.
+  - isHRD: 1
+    expressionId: 
+    sentence: Mari kita mulai dengan membahas motivasi Anda memilih perusahaan kami.
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Apa strategi Anda dalam mengelola kampanye pemasaran digital berskala
+      besar?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya mengombinasikan optimasi konten kreatif berbasis audiens dengan
+      pelacakan konversi real-time.
+  - isHRD: 1
+    expressionId: 
+    sentence: Bagaimana Anda mengukur efisiensi anggaran belanja iklan tiap kanal?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Kami melacak metrik ROAS dan CAC secara berkala untuk merealokasi budget
+      secara efisien.
+  salaryLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Boleh saya tahu kebijakan kenaikan remunerasi berkala di perusahaan
+      ini?
+  - isHRD: 1
+    expressionId: 
+    sentence: Peninjauan kompensasi dilakukan tahunan berdasarkan evaluasi performa
+      kerja.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Itu memberikan motivasi kerja yang sangat jelas bagi kemajuan karier.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami selalu mengapresiasi kontribusi dan inisiatif nyata setiap anggota
+      tim.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Wawancara hari ini berjalan sangat lancar, terima kasih Zahra.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih banyak atas arahan dan wawasannya mengenai divisi marketing.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami akan segera menyampaikan keputusan final melalui portal rekrutmen.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Baik, terima kasih banyak dan semoga sukses selalu untuk seluruh tim.

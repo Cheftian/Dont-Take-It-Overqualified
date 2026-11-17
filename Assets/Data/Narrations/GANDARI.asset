@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: GANDARI
+  m_EditorClassIdentifier: 
+  targetCharacterId: Gandari
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Selamat siang, saya Gandari hadir untuk wawancara tahap akhir.
+  - isHRD: 1
+    expressionId: 
+    sentence: Selamat siang Gandari, terima kasih sudah hadir tepat waktu.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Sama-sama, saya sangat antusias mengikuti tahap ini.
+  - isHRD: 1
+    expressionId: 
+    sentence: Mari langsung saja masuk ke pembahasan peran kepemimpinan tim.
+  skillLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Ceritakan gaya kepemimpinan Anda dalam mengelola tim lintas divisi.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Saya menerapkan komunikasi terbuka dan pendelegasian berbasis kekuatan
+      tiap anggota.
+  - isHRD: 1
+    expressionId: 
+    sentence: Bagaimana cara Anda menyelesaikan konflik internal antar divisi?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Kami mediasi langsung dengan mencari akar masalah dan solusi win-win.
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami telah menyiapkan penawaran kompensasi tingkat manajerial untuk
+      Anda.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Boleh saya telaah rincian komponen gaji pokok dan tunjangan jabatannya?
+  - isHRD: 1
+    expressionId: 
+    sentence: Tentu, ini rincian paket komprehensif termasuk tunjangan transportasi
+      dan asuransi keluarga.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Rincian paket ini sesuai dengan ekspektasi tanggung jawab yang akan
+      saya emban.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Terima kasih atas sesi wawancara yang sangat mendalam hari ini, Gandari.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih atas kesempatan dan sambutan hangat dari tim rekrutmen.
+  - isHRD: 1
+    expressionId: 
+    sentence: Surat penawaran resmi akan kami kirimkan ke email Anda hari ini.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Baik, saya tunggu surat resminya dan siap segera bekerja sama.

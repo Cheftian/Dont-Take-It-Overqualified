@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4bad32280b534ba5ccbea81ef9a38, type: 3}
+  m_Name: AYU
+  m_EditorClassIdentifier: 
+  targetCharacterId: Ayu
+  introLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Halo tim HRD, perkenalkan saya Ayu pelamar posisi analis data.
+  - isHRD: 1
+    expressionId: 
+    sentence: Halo Ayu, selamat datang di sesi wawancara kami.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih, saya siap mempresentasikan pengalaman studi kasus saya.
+  - isHRD: 1
+    expressionId: 
+    sentence: Silakan Ayu, kami sangat tertarik mendengar paparan Anda.
+  skillLines:
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Dalam proyek sebelumnya, saya memodelkan retensi pengguna menggunakan
+      machine learning.
+  - isHRD: 1
+    expressionId: 
+    sentence: Menarik sekali, bagaimana dampak hasil model tersebut terhadap strategi
+      produk?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Hasil model berhasil menurunkan tingkat churn pelanggan sebesar 15
+      persen.
+  - isHRD: 1
+    expressionId: 
+    sentence: Pencapaian yang sangat konkret dan relevan dengan tantangan tim kami
+      saat ini.
+  salaryLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Apakah Anda sudah melihat rincian rentang gaji untuk posisi analis
+      ini?
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Sudah saya telaah, dan rentang tersebut selaras dengan keahlian yang
+      saya bawa.
+  - isHRD: 1
+    expressionId: 
+    sentence: Kami juga menyertakan anggaran pelatihan dan sertifikasi profesional
+      tahunan.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Peluang pengembangan skill ini sangat berharga bagi peningkatan kompetensi
+      saya.
+  outroLines:
+  - isHRD: 1
+    expressionId: 
+    sentence: Terima kasih banyak atas waktu dan presentasi yang luar biasa hari
+      ini, Ayu.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Terima kasih atas waktu dan diskusi yang sangat membangun, Bu.
+  - isHRD: 1
+    expressionId: 
+    sentence: Tim user akan memberikan umpan balik akhir dalam waktu 2 hari kerja.
+  - isHRD: 0
+    expressionId: Normal
+    sentence: Siap, saya tunggu kabar selanjutnya. Selamat beraktivitas kembali.

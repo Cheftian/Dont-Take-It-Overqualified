@@ -2,68 +2,44 @@ using UnityEngine;
 
 public class ExcelPanelManager : MonoBehaviour
 {
-    [Header("Referensi Prefab & Tempat Spawn")]
-    [Tooltip("Masukkan Prefab Panel Excel dari folder Project")]
-    public GameObject excelPanelPrefab;
+    [Header("Referensi GameObject Excel")]
+    [Tooltip("GameObject utama Excel yang sudah ada di dalam scene")]
+    public GameObject excelMainGameObject;
 
-    [Tooltip("Parent di dalam Canvas tempat Prefab Excel akan di-spawn")]
-    public Transform excelParentContainer;
+    public GameObject ExcelMainGameObject => excelMainGameObject;
 
-    private GameObject currentExcelInstance;
-
-    /// <summary>
-    /// Mengganti panel Excel kandidat lama dengan instance baru yang semua togglenya kosong.
-    /// Dipanggil oleh GameManager setiap kali kandidat baru masuk.
-    /// </summary>
-    public void SpawnFreshExcelPanel()
+    public void ResetExcelEvaluation()
     {
-        bool hadPreviousInstance = currentExcelInstance != null;
-        bool wasVisible = hadPreviousInstance && currentExcelInstance.activeSelf;
-
-        if (hadPreviousInstance)
+        if (excelMainGameObject == null)
         {
-            ExcelSheetPrefab previousExcelSheet = currentExcelInstance.GetComponent<ExcelSheetPrefab>();
-            if (previousExcelSheet != null)
-            {
-                previousExcelSheet.ResetEvaluation();
-            }
-
-            Destroy(currentExcelInstance);
+            Debug.LogError("[ExcelPanelManager] GameObject utama Excel belum diisi di Inspector!");
+            return;
         }
 
-        if (excelPanelPrefab != null)
+        ExcelSheetPrefab excelSheet = excelMainGameObject.GetComponent<ExcelSheetPrefab>();
+        if (excelSheet != null)
         {
-            Transform parent = excelParentContainer != null ? excelParentContainer : transform;
-            currentExcelInstance = Instantiate(excelPanelPrefab, parent);
-            if (hadPreviousInstance)
-            {
-                currentExcelInstance.SetActive(wasVisible);
-            }
-
-            ExcelSheetPrefab excelSheet = currentExcelInstance.GetComponent<ExcelSheetPrefab>();
-            if (excelSheet != null)
-            {
-                excelSheet.ResetEvaluation();
-            }
-            else
-            {
-                Debug.LogWarning("[ExcelPanelManager] Excel Panel Prefab tidak memiliki ExcelSheetPrefab!");
-            }
+            excelSheet.ResetEvaluation();
         }
         else
         {
-            Debug.LogWarning("[ExcelPanelManager] Excel Panel Prefab belum diisi di Inspector!");
+            Debug.LogError("[ExcelPanelManager] GameObject utama Excel tidak memiliki ExcelSheetPrefab!");
         }
     }
 
-    /// <summary>
-    /// Opsional: Jika kamu ingin menampilkan/menyembunyikan panel Excel lewat tombol ikon Excel.
-    /// </summary>
     public void ToggleExcelVisibility()
     {
-        if (currentExcelInstance != null)
+        if (excelMainGameObject != null)
         {
-            currentExcelInstance.SetActive(!currentExcelInstance.activeSelf);
+            excelMainGameObject.SetActive(!excelMainGameObject.activeSelf);
+        }
+    }
+
+    public void ShowExcelPanel()
+    {
+        if (excelMainGameObject != null)
+        {
+            excelMainGameObject.SetActive(true);
         }
     }
 }

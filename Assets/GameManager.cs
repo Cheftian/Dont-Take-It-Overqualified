@@ -146,11 +146,24 @@ public class GameManager : MonoBehaviour
 
         if (excelPanelManager != null)
         {
-            excelPanelManager.SpawnFreshExcelPanel();
+            excelPanelManager.ResetExcelEvaluation();
         }
 
         CandidateRecord record = interviewQueue[currentIndex];
         CharacterProfile profile = characterManager.SetupCandidate(record.characterId);
+
+        if (profile != null && panelAnimation != null)
+        {
+            SpriteRenderer characterRenderer = characterManager.CurrentCharacterSpriteRenderer;
+            if (characterRenderer != null)
+            {
+                panelAnimation.characterTransform = characterRenderer.transform;
+            }
+            else
+            {
+                Debug.LogError($"[GameManager] SpriteRenderer tidak tersedia untuk karakter '{record.characterId}'.");
+            }
+        }
 
         // Jalankan animasi slide dari kanan ke kiri
         if (panelAnimation != null)

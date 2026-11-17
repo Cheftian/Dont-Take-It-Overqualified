@@ -20,6 +20,7 @@ public class CharacterProfile
     public NarrationData narrationData;
 
     [Header("Visual & Ekspresi")]
+    public SpriteRenderer characterSpriteRenderer;
     public Sprite defaultSprite;    // Sprite default saat karakter pertama kali muncul
     public List<ExpressionData> expressions = new List<ExpressionData>();
 }
@@ -27,7 +28,7 @@ public class CharacterProfile
 public class CharacterManager : MonoBehaviour
 {
     [Header("Komponen Visual 2D Utama")]
-    [Tooltip("Komponen SpriteRenderer pada GameObject karakter di Scene")]
+    [Tooltip("Fallback untuk profil yang belum memiliki SpriteRenderer sendiri")]
     public SpriteRenderer characterSpriteRenderer;
 
     [Header("Database Karakter")]
@@ -37,6 +38,8 @@ public class CharacterManager : MonoBehaviour
     private CharacterProfile currentCandidate;
 
     public CharacterProfile CurrentCandidate => currentCandidate;
+    public SpriteRenderer CurrentCharacterSpriteRenderer =>
+        currentCandidate != null ? GetCharacterSpriteRenderer(currentCandidate) : null;
     public bool IsCurrentCandidateOrangDalam => currentCandidate != null && currentCandidate.isOrangDalam;
 
     /// <summary>
@@ -48,11 +51,25 @@ public class CharacterManager : MonoBehaviour
         if (profile != null)
         {
             currentCandidate = profile;
+            SpriteRenderer profileRenderer = GetCharacterSpriteRenderer(profile);
 
-            if (characterSpriteRenderer != null)
+            foreach (CharacterProfile character in characterDatabase)
             {
-                characterSpriteRenderer.sprite = profile.defaultSprite;
-                characterSpriteRenderer.enabled = true;
+                if (character.characterSpriteRenderer != null && character.characterSpriteRenderer != profileRenderer)
+                {
+                    character.characterSpriteRenderer.enabled = false;
+                }
+            }
+
+            if (characterSpriteRenderer != null && characterSpriteRenderer != profileRenderer)
+            {
+                characterSpriteRenderer.enabled = false;
+            }
+
+            if (profileRenderer != null)
+            {
+                profileRenderer.sprite = profile.defaultSprite;
+                profileRenderer.enabled = true;
             }
         }
         else
@@ -69,24 +86,32 @@ public class CharacterManager : MonoBehaviour
     public void SetExpression(string characterId, string expressionId)
     {
         CharacterProfile profile = GetCharacterProfile(characterId);
-        if (profile == null || characterSpriteRenderer == null) return;
+        if (profile == null) return;
+
+        SpriteRenderer profileRenderer = GetCharacterSpriteRenderer(profile);
+        if (profileRenderer == null) return;
 
         if (string.IsNullOrEmpty(expressionId))
         {
-            characterSpriteRenderer.sprite = profile.defaultSprite;
+            profileRenderer.sprite = profile.defaultSprite;
             return;
         }
 
         ExpressionData foundExpression = profile.expressions.Find(e => e.expressionId == expressionId);
         if (foundExpression != null && foundExpression.expressionSprite != null)
         {
-            characterSpriteRenderer.sprite = foundExpression.expressionSprite;
+            profileRenderer.sprite = foundExpression.expressionSprite;
         }
         else
         {
             Debug.LogWarning($"[CharacterManager] Ekspresi '{expressionId}' tidak ditemukan pada '{characterId}'. Menggunakan default.");
-            characterSpriteRenderer.sprite = profile.defaultSprite;
+            profileRenderer.sprite = profile.defaultSprite;
         }
+    }
+
+    private SpriteRenderer GetCharacterSpriteRenderer(CharacterProfile profile)
+    {
+        return profile.characterSpriteRenderer != null ? profile.characterSpriteRenderer : characterSpriteRenderer;
     }
 
     public CharacterProfile GetCharacterProfile(string characterId)
